@@ -23,13 +23,23 @@ init {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val inflater = LayoutInflater.from(mContext)
-        val rowView = inflater.inflate(mResource, parent,false)
+        var rowView : View = convertView ?: inflater.inflate(mResource, parent, false)
 
-        val textView = rowView.findViewById<TextView>(R.id.item_text)
+
+        if (convertView == null){
+            rowView.tag = MyViewHolder(rowView)
+        }
+
+        val vh = rowView.tag as MyViewHolder
+
         val str = mValues.get(position)
+        vh.tv?.text = str
 
-        textView.text = str
-
-        return rowView
+            return rowView
     }
+}
+
+private class MyViewHolder (view: View?){
+
+    val tv = view?.findViewById<TextView>(R.id.item_text)
 }
