@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Referência ao botão
-        val button = findViewById<Button>(R.id.button)
+        val button = findViewById<Button>(R.id.loginButton)
         // Configurando o clique no botão
         button.setOnClickListener {
             // Criando um intent para abrir a SecondActivity
