@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">MyLogin</string>
     <string name="app_login">Login</string>
+    <string name="app_welcome">Welcome</string>
+    <string name="app_createacc">Create Account</string>
+    <string name="app_forgot">\"Forgot your password?\"</string>
 </resources>

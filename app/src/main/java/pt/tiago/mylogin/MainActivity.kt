@@ -13,11 +13,19 @@ class MainActivity : AppCompatActivity() {
 
         // Referência ao botão
         val button = findViewById<Button>(R.id.loginButton)
+        val button2 = findViewById<Button>(R.id.createAccountButton)
+
         // Configurando o clique no botão
         button.setOnClickListener {
             // Criando um intent para abrir a SecondActivity
             val intent = Intent(this@MainActivity, Register::class.java)
             startActivity(intent)
         }
+        button2.setOnClickListener {
+            // Criando um intent para abrir a SecondActivity
+            val intent = Intent(this@MainActivity, CreatAcc::class.java)
+            startActivity(intent)
+        }
+
     }
 }

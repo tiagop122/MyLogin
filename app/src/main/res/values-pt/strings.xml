@@ -2,4 +2,7 @@
 <resources>
     <string name="app_name">MyLogin</string>
     <string name="app_login">Entrar</string>
+    <string name="app_welcome">Bem Vindo</string>
+    <string name="app_createacc">Criar Conta</string>
+    <string name="app_forgot">Esqueceu-se da password?</string>
 </resources>
